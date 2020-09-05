@@ -1,9 +1,9 @@
 import { Router } from 'express';
 
-// import rotaRouter from './rota.routes';
-
 const routes = Router();
 
-// routes.use('/', );
+routes.get('/', (request, response) => {
+  response.send('API version 1.0.0');
+});
 
 export default routes;
